@@ -43,6 +43,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css/style.css">
 
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css" />
+
+
 	<!-- Icons -->
 	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
@@ -63,10 +66,16 @@
 	
 	
 
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
+
 </head>
 
 
-<body class="loading ajax-loading" data-site-url="https://donnamooreinteriors.com" data-page-url="/project/hamilton-terrace">
+<body class="loading" data-site-url="https://donnamooreinteriors.com" data-page-url="/project/hamilton-terrace">
 
 
 	<header class="header">
@@ -79,9 +88,8 @@
 		</a>
 		
 
-		<h1 class="header__tagline">Make Yourself at Home<sup>®</sup></h1>
+		<h1 class="header__tagline">Make&nbsp;Yourself&nbsp;at&nbsp;Home<sup>®</sup></h1>
 
-		<br>
 		<a href="/contact" class="button button--large">Contact Me Now</a>
 
 		<div class="menu">
@@ -100,7 +108,7 @@
 					</li>
 					
 					<li class="menu__list__item">
-						<a href="/testimonials" class="menu__list__item__link">People Are Saying</a>
+						<a href="/testimonials" class="menu__list__item__link">Testimonials</a>
 					</li>
 					
 					<li class="menu__list__item">
@@ -225,7 +233,7 @@
 	
 </ul>
 			<div class="footer__copyright">
-  <span>© 2019 Donna Moore Interiors</span>
+  <span>© 2020 Donna Moore Interiors</span>
   <a href="/privacy">Privacy Policy</a>
 </div>
 
@@ -262,23 +270,51 @@
 
 	<div class="wrap">
 
-		<p><img src="/images/wordpress_media/181205-0001w.jpg" alt="" /></p>
+		<div id="hamilton-terrace">
 
-<div class="gallery" data-columns="2">
-	<img src="/images/wordpress_media/181205-0007w.jpg" />
-	<img src="/images/wordpress_media/181205-0017w.jpg" />
-	<img src="/images/wordpress_media/181205-0021w.jpg" />
-	<img src="/images/wordpress_media/181205-0013w.jpg" />
-	<img src="/images/wordpress_media/181205-0015w.jpg" />
-	<img src="/images/wordpress_media/181205-0023w.jpg" />
-	<img src="/images/wordpress_media/181205-0009w.jpg" />
-	<img src="/images/wordpress_media/181205-0025w.jpg" />
-	<img src="/images/wordpress_media/181205-0027w.jpg" />
-	<img src="/images/wordpress_media/181205-0034w.jpg" />
-	<img src="/images/wordpress_media/181205-0029w.jpg" />
+	<div class="gallery__item">
+  	<a class="gallery__item__link" href="/images/wordpress_media/181205-0001w.jpg">
+  		<img src="/images/wordpress_media/181205-0001w.jpg" alt="" />
+  	</a>
+	</div>
+
+	<div class="gallery no-fluidbox" data-columns="2">
+		<img src="/images/wordpress_media/181205-0007w.jpg" />
+		<img src="/images/wordpress_media/181205-0017w.jpg" />
+		<img src="/images/wordpress_media/181205-0021w.jpg" />
+		<img src="/images/wordpress_media/181205-0013w.jpg" />
+		<img src="/images/wordpress_media/181205-0015w.jpg" />
+		<img src="/images/wordpress_media/181205-0023w.jpg" />
+		<img src="/images/wordpress_media/181205-0009w.jpg" />
+		<img src="/images/wordpress_media/181205-0025w.jpg" />
+		<img src="/images/wordpress_media/181205-0027w.jpg" />
+		<img src="/images/wordpress_media/181205-0034w.jpg" />
+		<img src="/images/wordpress_media/181205-0029w.jpg" />
+	</div>
+
+  <div class="gallery__item">
+    <a class="gallery__item__link" href="/images/wordpress_media/181205-0033w.jpg">
+  		<img src="/images/wordpress_media/181205-0033w.jpg" alt="" />
+  	</a>
+  </div>
+
 </div>
 
-<p><img src="/images/wordpress_media/181205-0033w.jpg" alt="" /></p>
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    // $('.gallery__item__link').each( function() {
+    //   $(this).fluidbox('destroy.fluidbox');
+    //   console.log($(this));
+    // });
+
+    $("#hamilton-terrace").lightGallery({
+			selector: '.gallery__item__link',
+      thumbnail:true
+    });
+  });
+</script>
+
 
 
 	</div>
@@ -367,7 +403,7 @@
 	
 </ul>
 	<div class="footer__copyright">
-  <span>© 2019 Donna Moore Interiors</span>
+  <span>© 2020 Donna Moore Interiors</span>
   <a href="/privacy">Privacy Policy</a>
 </div>
 
@@ -375,16 +411,15 @@
 </footer>
 
 
-
 	<!-- Javascript Assets -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 	<script src="/js/index-min.js"></script>
+
+	
 
 	
 	<!-- Extra Footer JS Code -->
 	
-	
-
 	
 
 </body>
