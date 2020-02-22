@@ -1,76 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://donnamooreinteriors.com/about</loc>
-<lastmod>2020-01-30T19:21:23-05:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/classic</loc>
-<lastmod>2020-01-30T19:21:23-05:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/contact</loc>
-<lastmod>2020-01-30T19:21:23-05:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/privacy</loc>
-<lastmod>2020-01-30T19:21:23-05:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/services</loc>
-<lastmod>2020-01-30T19:21:23-05:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/testimonials</loc>
-<lastmod>2020-01-30T19:21:23-05:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/thanks</loc>
-<lastmod>2020-01-30T19:21:23-05:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/blog/demo-post</loc>
-<lastmod>2018-06-29T20:00:00-04:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/project/devonshire-lake</loc>
-<lastmod>2018-06-30T20:00:00-04:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/project/foxcroft</loc>
-<lastmod>2018-07-02T20:00:00-04:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/project/canyon-creek-cottage</loc>
-<lastmod>2018-07-03T20:00:00-04:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/project/grant-park</loc>
-<lastmod>2018-07-04T20:00:00-04:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/project/van-ness-avenue</loc>
-<lastmod>2018-07-06T20:00:00-04:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/project/carrington-pointe</loc>
-<lastmod>2018-07-07T20:00:00-04:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/project/park-avenue</loc>
-<lastmod>2018-07-08T20:00:00-04:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/project/hamilton-terrace</loc>
-<lastmod>2018-07-09T20:00:00-04:00</lastmod>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/blog/</loc>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/portfolio/</loc>
-</url>
-<url>
-<loc>https://donnamooreinteriors.com/</loc>
-</url>
-</urlset>
+  <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+      <loc>https://donnamooreinteriors.com/about</loc>
+      <lastmod>2020-02-22T06:22:25-05:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/contact</loc>
+      <lastmod>2020-02-22T06:22:25-05:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/privacy</loc>
+      <lastmod>2020-02-22T06:22:25-05:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/services</loc>
+      <lastmod>2020-02-22T06:22:25-05:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/testimonials</loc>
+      <lastmod>2020-02-22T06:22:25-05:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/thanks</loc>
+      <lastmod>2020-02-22T06:22:25-05:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/portfolio/devonshire-lake</loc>
+      <lastmod>2018-06-30T20:00:00-04:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/portfolio/wedgewood</loc>
+      <lastmod>2018-07-01T20:00:00-04:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/portfolio/foxcroft</loc>
+      <lastmod>2018-07-02T20:00:00-04:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/portfolio/canyon-creek-cottage</loc>
+      <lastmod>2018-07-03T20:00:00-04:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/portfolio/grant-park</loc>
+      <lastmod>2018-07-04T20:00:00-04:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/portfolio/abbeys-way</loc>
+      <lastmod>2018-07-05T20:00:00-04:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/portfolio/van-ness-avenue</loc>
+      <lastmod>2018-07-06T20:00:00-04:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/portfolio/carrington-pointe</loc>
+      <lastmod>2018-07-07T20:00:00-04:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/portfolio/park-avenue</loc>
+      <lastmod>2018-07-08T20:00:00-04:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/portfolio/hamilton-terrace</loc>
+      <lastmod>2018-07-09T20:00:00-04:00</lastmod>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/blog/</loc>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/portfolio/</loc>
+    </url>
+    <url>
+      <loc>https://donnamooreinteriors.com/</loc>
+    </url>
+  </urlset>
