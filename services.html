@@ -176,7 +176,7 @@
             <div id="Full Service Design" class="tabcontent">
               <!-- <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: 50%">
   <a class="gallery__item__link" href="/images/branding_photos/DSC_3399.jpg">
-    <img src="/images/branding_photos/DSC_3399.jpg" alt="" />
+    <img data-src="/images/branding_photos/DSC_3399.jpg" alt="…" loading="lazy" class="lazyload">
   </a>
 </div>
  -->
@@ -184,7 +184,7 @@
               <p>You deserve the luxury of coming home to a house that’s perfect for you. Donna Moore Interiors delivers a beautiful home that functions specifically for you and your lifestyle in this concierge-level service. She and her team carefully manage every detail from design conception to project completion, making your vision for your home come to life.</p>
               <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
                 <a class="gallery__item__link" href="/images/branding_photos/DSC_3415.jpg">
-                  <img src="/images/branding_photos/DSC_3415.jpg" alt="" />
+                  <img data-src="/images/branding_photos/DSC_3415.jpg" alt="…" loading="lazy" class="lazyload" />
                 </a>
               </div>
               <p>Full-service design covers every aspect of the project, whether it’s new build, renovation, or redesign. That includes working with contractors, builders, architects and trade professionals, specification services for construction materials and furnishings, sourcing, floor plans, installation and much more. We take the stress out of project management, making it a seamless process that delivers premier customer service and stunning interiors.</p>
@@ -212,7 +212,7 @@
               <p>Whether you’re building the home of your dreams or downsizing to a new space, Donna’s expertise and knowledge will help you equip and empower your house to support you and your lifestyle for decades. Her thoughtful process ensures that every detail is covered, providing you a well-designed and executed project.</p>
               <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
                 <a class="gallery__item__link" href="/images/branding_photos/DSC_3480.jpg">
-                  <img src="/images/branding_photos/DSC_3480.jpg" alt="" />
+                  <img data-src="/images/branding_photos/DSC_3480.jpg" alt="…" loading="lazy" class="lazyload" />
                 </a>
               </div>
               <p>From ways that make it a breeze to carry an armload of groceries or easily move golf clubs or strollers in and out of your home to enhancing hard to reach cabinetry areas with rollouts and pullouts, every finished room is gorgeous and welcoming.</p>
@@ -224,7 +224,7 @@
               <p>In a one-on-one session, Donna Moore will spend 3-4 hours with you in your home, sharing her expertise and answering all of your questions. She will put together a detailed summary of your time together and send you a package of notes and beautiful samples customized just for you.</p>
               <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
                 <a class="gallery__item__link" href="/images/branding_photos/DSC_3146.jpg">
-                  <img src="/images/branding_photos/DSC_3146.jpg" alt="" />
+                  <img data-src="/images/branding_photos/DSC_3146.jpg" alt="…" loading="lazy" class="lazyload" />
                 </a>
               </div>
               <p>And remember, it’s your day! You can work with Donna to design a new color scheme for your rooms, learn best ideas on use of spaces, floorplans, materials, furnishings, artwork, lighting, solve a design dilemma, or stage a home for sale – you set the goal and Donna will help you achieve it. Most importantly, she will show you how to use your budget wisely to create the home of your dreams.</p>
@@ -296,5 +296,19 @@
     <!-- Javascript Assets -->
     <script src="/js/index-min.js"></script>
     <!-- Extra Footer JS Code -->
+    <script>
+      if ('loading' in HTMLImageElement.prototype) {
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        images.forEach(img => {
+          img.src = img.dataset.src;
+        });
+      } else {
+        // Dynamically import the LazySizes library
+        const script = document.createElement('script');
+        script.src =
+          'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
+        document.body.appendChild(script);
+      }
+    </script>
   </body>
 </html>

@@ -171,24 +171,24 @@
               <p>Donna Moore Interiors improves the way you live by delivering a beautiful home that functions specifically for you and your lifestyle.</p>
               <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
                 <a class="gallery__item__link" href="/images/grant-park/001.jpg">
-                  <img src="/images/grant-park/001.jpg" alt="" />
+                  <img data-src="/images/grant-park/001.jpg" alt="…" loading="lazy" class="lazyload">
                 </a>
               </div>
               <p>Donna Moore and her team are passionate about designing gorgeous and livable homes that can stand the test of time with style and functionality.</p>
               <div class="gallery" data-columns="3" style="margin-top: 15px">
-                <img src="/images/grant-park/001.jpg">
-                <img src="/images/branding_photos/DSC_3351.jpg">
-                <img src="/images/abbeys-way/002.jpg">
+                <img src="/images/demo/1000x1498.png" data-src="/images/grant-park/001.jpg" alt="…" loading="lazy" class="lazyload">
+                <img src="/images/demo/3203x4800.png" data-src="/images/branding_photos/DSC_3351.jpg" alt="…" loading="lazy" class="lazyload">
+                <img src="/images/demo/1000x1498.png" data-src="/images/abbeys-way/002.jpg" alt="…" loading="lazy" class="lazyload">
               </div>
               <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
                 <a class="gallery__item__link" href="/images/branding_photos/DSC_3351.jpg">
-                  <img src="/images/branding_photos/DSC_3351.jpg" alt="" />
+                  <img data-src="/images/branding_photos/DSC_3351.jpg" alt="…" loading="lazy" class="lazyload">
                 </a>
               </div>
               <p>They also provide hands-on service with customer-centric and organized project management, creating long lasting client relationships.</p>
               <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
                 <a class="gallery__item__link" href="/images/abbeys-way/002.jpg">
-                  <img src="/images/abbeys-way/002.jpg" alt="" />
+                  <img data-src="/images/abbeys-way/002.jpg" alt="…" loading="lazy" class="lazyload">
                 </a>
               </div>
               <p>Based in Northern Virginia, Donna Moore Interiors works with clients throughout Washington, DC and the surrounding areas.</p>
@@ -470,5 +470,19 @@
     <!-- Javascript Assets -->
     <script src="/js/index-min.js"></script>
     <!-- Extra Footer JS Code -->
+    <script>
+      if ('loading' in HTMLImageElement.prototype) {
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        images.forEach(img => {
+          img.src = img.dataset.src;
+        });
+      } else {
+        // Dynamically import the LazySizes library
+        const script = document.createElement('script');
+        script.src =
+          'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
+        document.body.appendChild(script);
+      }
+    </script>
   </body>
 </html>

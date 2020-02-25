@@ -164,7 +164,7 @@
           <div class="wrap lightgallery">
             <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
               <a class="gallery__item__link" href="/images/devonshire-lake/003.jpg">
-                <img src="/images/devonshire-lake/003.jpg" alt="" />
+                <img data-src="/images/devonshire-lake/003.jpg" alt="…" loading="lazy" class="lazyload" />
               </a>
             </div>
             <div class="gallery" data-columns="2">
@@ -173,12 +173,12 @@
             </div>
             <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
               <a class="gallery__item__link" href="/images/devonshire-lake/004.jpg">
-                <img src="/images/devonshire-lake/004.jpg" alt="" />
+                <img data-src="/images/devonshire-lake/004.jpg" alt="…" loading="lazy" class="lazyload" />
               </a>
             </div>
             <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
               <a class="gallery__item__link" href="/images/devonshire-lake/001.jpg">
-                <img src="/images/devonshire-lake/001.jpg" alt="" />
+                <img data-src="/images/devonshire-lake/001.jpg" alt="…" loading="lazy" class="lazyload" />
               </a>
             </div>
           </div>
@@ -222,5 +222,19 @@
     <!-- Javascript Assets -->
     <script src="/js/index-min.js"></script>
     <!-- Extra Footer JS Code -->
+    <script>
+      if ('loading' in HTMLImageElement.prototype) {
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        images.forEach(img => {
+          img.src = img.dataset.src;
+        });
+      } else {
+        // Dynamically import the LazySizes library
+        const script = document.createElement('script');
+        script.src =
+          'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
+        document.body.appendChild(script);
+      }
+    </script>
   </body>
 </html>

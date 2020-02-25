@@ -164,7 +164,7 @@
           <div class="wrap lightgallery">
             <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
               <a class="gallery__item__link" href="/images/carrington-pointe/008w.jpg">
-                <img src="/images/carrington-pointe/008w.jpg" alt="" />
+                <img data-src="/images/carrington-pointe/008w.jpg" alt="…" loading="lazy" class="lazyload" />
               </a>
             </div>
             <div class="gallery" data-columns="2">
@@ -176,12 +176,12 @@
             </div>
             <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
               <a class="gallery__item__link" href="/images/carrington-pointe/010w.jpg">
-                <img src="/images/carrington-pointe/010w.jpg" alt="" />
+                <img data-src="/images/carrington-pointe/010w.jpg" alt="…" loading="lazy" class="lazyload" />
               </a>
             </div>
             <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
               <a class="gallery__item__link" href="/images/carrington-pointe/079w.jpg">
-                <img src="/images/carrington-pointe/079w.jpg" alt="" />
+                <img data-src="/images/carrington-pointe/079w.jpg" alt="…" loading="lazy" class="lazyload" />
               </a>
             </div>
             <div class="gallery" data-columns="2">
@@ -191,12 +191,12 @@
             </div>
             <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
               <a class="gallery__item__link" href="/images/carrington-pointe/051w.jpg">
-                <img src="/images/carrington-pointe/051w.jpg" alt="" />
+                <img data-src="/images/carrington-pointe/051w.jpg" alt="…" loading="lazy" class="lazyload" />
               </a>
             </div>
             <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
               <a class="gallery__item__link" href="/images/carrington-pointe/056w.jpg">
-                <img src="/images/carrington-pointe/056w.jpg" alt="" />
+                <img data-src="/images/carrington-pointe/056w.jpg" alt="…" loading="lazy" class="lazyload" />
               </a>
             </div>
             <div class="gallery" data-columns="2">
@@ -205,7 +205,7 @@
             </div>
             <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
               <a class="gallery__item__link" href="/images/carrington-pointe/042w.jpg">
-                <img src="/images/carrington-pointe/042w.jpg" alt="" />
+                <img data-src="/images/carrington-pointe/042w.jpg" alt="…" loading="lazy" class="lazyload" />
               </a>
             </div>
             <div class="gallery" data-columns="2">
@@ -253,5 +253,19 @@
     <!-- Javascript Assets -->
     <script src="/js/index-min.js"></script>
     <!-- Extra Footer JS Code -->
+    <script>
+      if ('loading' in HTMLImageElement.prototype) {
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        images.forEach(img => {
+          img.src = img.dataset.src;
+        });
+      } else {
+        // Dynamically import the LazySizes library
+        const script = document.createElement('script');
+        script.src =
+          'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
+        document.body.appendChild(script);
+      }
+    </script>
   </body>
 </html>
