@@ -18,11 +18,11 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Grant Park – Donna Moore Interiors">
     <meta name="twitter:description" content="">
-    <meta name="twitter:image:src" content="https://donnamooreinteriors.com/images/grant-park/005.jpg">
+    <meta name="twitter:image:src" content="http://localhost:4000/grant-park/005.jpg">
     <!-- Facebook OpenGraph -->
     <meta property="og:title" content="Grant Park – Donna Moore Interiors" />
     <meta property="og:description" content="" />
-    <meta property="og:image" content="https://donnamooreinteriors.com/images/grant-park/005.jpg" />
+    <meta property="og:image" content="http://localhost:4000/grant-park/005.jpg" />
     <!-- Font Embed Code -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
     <!-- Styles -->
@@ -41,7 +41,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
   </head>
-  <body class="loading" data-site-url="https://donnamooreinteriors.com" data-page-url="/portfolio/grant-park">
+  <body class="loading" data-site-url="http://localhost:4000" data-page-url="/portfolio/grant-park">
     <header class="header">
       <div class="header__content">
         <a href="/" class="header__title">
@@ -216,6 +216,7 @@
         const images = document.querySelectorAll('img[loading="lazy"]');
         images.forEach(img => {
           img.src = img.dataset.src;
+          img.srcset = img.dataset.srcset;
         });
       } else {
         // Dynamically import the LazySizes library

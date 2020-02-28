@@ -18,11 +18,11 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Services – Donna Moore Interiors">
     <meta name="twitter:description" content="">
-    <meta name="twitter:image:src" content="https://donnamooreinteriors.com/images/demo/demo-portrait.jpg">
+    <meta name="twitter:image:src" content="http://localhost:4000/images/demo/demo-portrait.jpg">
     <!-- Facebook OpenGraph -->
     <meta property="og:title" content="Services – Donna Moore Interiors" />
     <meta property="og:description" content="" />
-    <meta property="og:image" content="https://donnamooreinteriors.com/images/demo/demo-portrait.jpg" />
+    <meta property="og:image" content="http://localhost:4000/images/demo/demo-portrait.jpg" />
     <!-- Font Embed Code -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
     <!-- Styles -->
@@ -41,7 +41,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
   </head>
-  <body class="loading" data-site-url="https://donnamooreinteriors.com" data-page-url="/services">
+  <body class="loading" data-site-url="http://localhost:4000" data-page-url="/services">
     <header class="header">
       <div class="header__content">
         <a href="/" class="header__title">
@@ -162,6 +162,11 @@
         </section>
         <section class="single">
           <div class="wrap">
+            <!-- <div class="gallery" data-columns="3">
+  <img src="/images/branding_photos/DSC_3403.jpg">
+  <img src="/images/branding_photos/DSC_3229.jpg">
+	<img src="/images/wordpress_media/IMG-0015.jpg">
+</div> -->
             <div class="tab">
               <button class="tablinks" onclick="openTab(event, 'Full Service Design')" id="defaultTab">
                 <h5>Full Service Design</h5>
@@ -176,7 +181,7 @@
             <div id="Full Service Design" class="tabcontent">
               <!-- <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: 50%">
   <a class="gallery__item__link" href="/images/branding_photos/DSC_3399.jpg">
-    <img data-src="/images/branding_photos/DSC_3399.jpg" alt="…" loading="lazy" class="lazyload">
+    <img src="/images/branding_photos/DSC_3399.jpg" alt="…">
   </a>
 </div>
  -->
@@ -184,7 +189,7 @@
               <p>You deserve the luxury of coming home to a house that’s perfect for you. Donna Moore Interiors delivers a beautiful home that functions specifically for you and your lifestyle in this concierge-level service. She and her team carefully manage every detail from design conception to project completion, making your vision for your home come to life.</p>
               <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
                 <a class="gallery__item__link" href="/images/branding_photos/DSC_3415.jpg">
-                  <img data-src="/images/branding_photos/DSC_3415.jpg" alt="…" loading="lazy" class="lazyload" />
+                  <img src="/images/branding_photos/DSC_3415.jpg" alt="…" />
                 </a>
               </div>
               <p>Full-service design covers every aspect of the project, whether it’s new build, renovation, or redesign. That includes working with contractors, builders, architects and trade professionals, specification services for construction materials and furnishings, sourcing, floor plans, installation and much more. We take the stress out of project management, making it a seamless process that delivers premier customer service and stunning interiors.</p>
@@ -212,7 +217,7 @@
               <p>Whether you’re building the home of your dreams or downsizing to a new space, Donna’s expertise and knowledge will help you equip and empower your house to support you and your lifestyle for decades. Her thoughtful process ensures that every detail is covered, providing you a well-designed and executed project.</p>
               <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
                 <a class="gallery__item__link" href="/images/branding_photos/DSC_3480.jpg">
-                  <img data-src="/images/branding_photos/DSC_3480.jpg" alt="…" loading="lazy" class="lazyload" />
+                  <img src="/images/branding_photos/DSC_3480.jpg" alt="…" />
                 </a>
               </div>
               <p>From ways that make it a breeze to carry an armload of groceries or easily move golf clubs or strollers in and out of your home to enhancing hard to reach cabinetry areas with rollouts and pullouts, every finished room is gorgeous and welcoming.</p>
@@ -224,7 +229,7 @@
               <p>In a one-on-one session, Donna Moore will spend 3-4 hours with you in your home, sharing her expertise and answering all of your questions. She will put together a detailed summary of your time together and send you a package of notes and beautiful samples customized just for you.</p>
               <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
                 <a class="gallery__item__link" href="/images/branding_photos/DSC_3146.jpg">
-                  <img data-src="/images/branding_photos/DSC_3146.jpg" alt="…" loading="lazy" class="lazyload" />
+                  <img src="/images/branding_photos/DSC_3146.jpg" alt="…" />
                 </a>
               </div>
               <p>And remember, it’s your day! You can work with Donna to design a new color scheme for your rooms, learn best ideas on use of spaces, floorplans, materials, furnishings, artwork, lighting, solve a design dilemma, or stage a home for sale – you set the goal and Donna will help you achieve it. Most importantly, she will show you how to use your budget wisely to create the home of your dreams.</p>
@@ -259,13 +264,17 @@
               document.getElementById("defaultTab").click();
             </script>
           </div>
-          <script type="text/javascript">
-            $(document).ready(function() {
-              $(function () {
-                $('.gallery__item a').fluidbox();
-              })
-            });
-          </script>
+          <!-- <script type="text/javascript">
+  $(document).ready(function() {
+    $(function () {
+      $('.gallery__item a').fluidbox({
+        immediateOpen: true,
+        loader: false
+      });
+    })
+  });
+</script>
+ -->
         </section>
       </div>
     </div>
@@ -301,6 +310,7 @@
         const images = document.querySelectorAll('img[loading="lazy"]');
         images.forEach(img => {
           img.src = img.dataset.src;
+          img.srcset = img.dataset.srcset;
         });
       } else {
         // Dynamically import the LazySizes library

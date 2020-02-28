@@ -18,11 +18,11 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Park Avenue – Donna Moore Interiors">
     <meta name="twitter:description" content="">
-    <meta name="twitter:image:src" content="https://donnamooreinteriors.com/images/park-avenue/084w.jpg">
+    <meta name="twitter:image:src" content="http://localhost:4000/park-avenue/075w.jpg">
     <!-- Facebook OpenGraph -->
     <meta property="og:title" content="Park Avenue – Donna Moore Interiors" />
     <meta property="og:description" content="" />
-    <meta property="og:image" content="https://donnamooreinteriors.com/images/park-avenue/084w.jpg" />
+    <meta property="og:image" content="http://localhost:4000/park-avenue/075w.jpg" />
     <!-- Font Embed Code -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
     <!-- Styles -->
@@ -41,7 +41,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
   </head>
-  <body class="loading" data-site-url="https://donnamooreinteriors.com" data-page-url="/portfolio/park-avenue">
+  <body class="loading" data-site-url="http://localhost:4000" data-page-url="/portfolio/park-avenue">
     <header class="header">
       <div class="header__content">
         <a href="/" class="header__title">
@@ -164,12 +164,12 @@
           <div class="wrap lightgallery">
             <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
               <a class="gallery__item__link" href="/images/park-avenue/084w.jpg">
-                <img data-src="/images/park-avenue/084w.jpg" alt="…" loading="lazy" class="lazyload" />
+                <img src="/images/park-avenue/084w.jpg" alt="…" />
               </a>
             </div>
             <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
               <a class="gallery__item__link" href="/images/park-avenue/050w.jpg">
-                <img data-src="/images/park-avenue/050w.jpg" alt="…" loading="lazy" class="lazyload" />
+                <img src="/images/park-avenue/050w.jpg" alt="…" />
               </a>
             </div>
             <div class="gallery" data-columns="3">
@@ -179,12 +179,12 @@
             </div>
             <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
               <a class="gallery__item__link" href="/images/park-avenue/073w.jpg">
-                <img data-src="/images/park-avenue/073w.jpg" alt="…" loading="lazy" class="lazyload" />
+                <img src="/images/park-avenue/073w.jpg" alt="…" />
               </a>
             </div>
             <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
               <a class="gallery__item__link" href="/images/park-avenue/052w.jpg">
-                <img data-src="/images/park-avenue/052w.jpg" alt="…" loading="lazy" class="lazyload" />
+                <img src="/images/park-avenue/052w.jpg" alt="…" />
               </a>
             </div>
             <div class="gallery" data-columns="3">
@@ -203,7 +203,7 @@
             </div>
             <div class="gallery__item individual-gallery-item" style="margin: 0px -10px; padding: 10px; width: ">
               <a class="gallery__item__link" href="/images/park-avenue/075w.jpg">
-                <img data-src="/images/park-avenue/075w.jpg" alt="…" loading="lazy" class="lazyload" />
+                <img src="/images/park-avenue/075w.jpg" alt="…" />
               </a>
             </div>
             <div class="gallery" data-columns="2">
@@ -258,6 +258,7 @@
         const images = document.querySelectorAll('img[loading="lazy"]');
         images.forEach(img => {
           img.src = img.dataset.src;
+          img.srcset = img.dataset.srcset;
         });
       } else {
         // Dynamically import the LazySizes library
