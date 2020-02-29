@@ -168,7 +168,7 @@
             </p>
             <div class="gallery__item inline_image" style="margin: 0px -10px; padding: 10px">
               <a class="gallery__item__link" href="/images/park-avenue/038w.jpg">
-                <img loading="lazy" src="/images/park-avenue/038w.jpg" srcset="/images/640w/park-avenue/038w.jpg" data-src="/images/park-avenue/038w.jpg" data-srcset="/images/640w/park-avenue/038w.jpg 640w, /images/768w/park-avenue/038w.jpg 768w, /images/1024w/park-avenue/038w.jpg 1024w, /images/1366w/park-avenue/038w.jpg 1366w, /images/1600w/park-avenue/038w.jpg 1600w, /images/park-avenue/038w.jpg 1800w" data-sizes="auto" class="lazyload" alt="…" width="1800" height="1200" />
+                <img loading="lazy" src="/images/park-avenue/038w.jpg" srcset="/images/640w/park-avenue/038w.jpg" data-srcset="/images/640w/park-avenue/038w.jpg 640w, /images/768w/park-avenue/038w.jpg 768w, /images/1024w/park-avenue/038w.jpg 1024w, /images/1366w/park-avenue/038w.jpg 1366w, /images/1600w/park-avenue/038w.jpg 1600w, /images/park-avenue/038w.jpg 1800w" data-sizes="auto" class="lazyload" alt="…" width="1800" height="1200" />
               </a>
             </div>
           </div>
@@ -217,7 +217,7 @@
       if ('loading' in HTMLImageElement.prototype) {
         const images = document.querySelectorAll('img[loading="lazy"]');
         images.forEach(img => {
-          img.src = img.dataset.src;
+          // img.src = img.dataset.src;
           img.srcset = img.dataset.srcset;
         });
       } else {

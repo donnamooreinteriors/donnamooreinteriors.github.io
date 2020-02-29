@@ -164,7 +164,6 @@
 loading="lazy"
 src="/images/hamilton-terrace/001w.jpg"
 srcset="/images/640w/hamilton-terrace/001w.jpg"
-data-src="/images/hamilton-terrace/001w.jpg"
 data-srcset="/images/640w/hamilton-terrace/001w.jpg 640w, /images/768w/hamilton-terrace/001w.jpg 768w, /images/1024w/hamilton-terrace/001w.jpg 1024w, /images/1366w/hamilton-terrace/001w.jpg 1366w, /images/1600w/hamilton-terrace/001w.jpg 1600w, /images/hamilton-terrace/001w.jpg 1800w"
 data-sizes="auto"
 class="lazyload"
@@ -187,7 +186,6 @@ width='1800' height='1200'
 loading="lazy"
 src="/images/park-avenue/075w.jpg"
 srcset="/images/640w/park-avenue/075w.jpg"
-data-src="/images/park-avenue/075w.jpg"
 data-srcset="/images/640w/park-avenue/075w.jpg 640w, /images/768w/park-avenue/075w.jpg 768w, /images/1024w/park-avenue/075w.jpg 1024w, /images/park-avenue/075w.jpg 1200w"
 data-sizes="auto"
 class="lazyload"
@@ -210,7 +208,6 @@ width='1200' height='1800'
 loading="lazy"
 src="/images/carrington-pointe/010w.jpg"
 srcset="/images/640w/carrington-pointe/010w.jpg"
-data-src="/images/carrington-pointe/010w.jpg"
 data-srcset="/images/640w/carrington-pointe/010w.jpg 640w, /images/768w/carrington-pointe/010w.jpg 768w, /images/1024w/carrington-pointe/010w.jpg 1024w, /images/1366w/carrington-pointe/010w.jpg 1366w, /images/1600w/carrington-pointe/010w.jpg 1600w, /images/carrington-pointe/010w.jpg 1800w"
 data-sizes="auto"
 class="lazyload"
@@ -233,7 +230,6 @@ width='1800' height='1200'
 loading="lazy"
 src="/images/van-ness-avenue/003w.jpg"
 srcset="/images/640w/van-ness-avenue/003w.jpg"
-data-src="/images/van-ness-avenue/003w.jpg"
 data-srcset="/images/640w/van-ness-avenue/003w.jpg 640w, /images/768w/van-ness-avenue/003w.jpg 768w, /images/1024w/van-ness-avenue/003w.jpg 1024w, /images/1366w/van-ness-avenue/003w.jpg 1366w, /images/1600w/van-ness-avenue/003w.jpg 1600w, /images/van-ness-avenue/003w.jpg 1800w"
 data-sizes="auto"
 class="lazyload"
@@ -256,7 +252,6 @@ width='1800' height='1200'
 loading="lazy"
 src="/images/abbeys-way/002.jpg"
 srcset="/images/640w/abbeys-way/002.jpg"
-data-src="/images/abbeys-way/002.jpg"
 data-srcset="/images/640w/abbeys-way/002.jpg 640w, /images/768w/abbeys-way/002.jpg 768w, /images/abbeys-way/002.jpg 1000w"
 data-sizes="auto"
 class="lazyload"
@@ -279,7 +274,6 @@ width='1000' height='1498'
 loading="lazy"
 src="/images/grant-park/005.jpg"
 srcset="/images/640w/grant-park/005.jpg"
-data-src="/images/grant-park/005.jpg"
 data-srcset="/images/640w/grant-park/005.jpg 640w, /images/768w/grant-park/005.jpg 768w, /images/1024w/grant-park/005.jpg 1024w, /images/1366w/grant-park/005.jpg 1366w, /images/grant-park/005.jpg 1498w"
 data-sizes="auto"
 class="lazyload"
@@ -302,7 +296,6 @@ width='1498' height='1000'
 loading="lazy"
 src="/images/canyon-creek-cottage/014.jpg"
 srcset="/images/640w/canyon-creek-cottage/014.jpg"
-data-src="/images/canyon-creek-cottage/014.jpg"
 data-srcset="/images/640w/canyon-creek-cottage/014.jpg 640w, /images/768w/canyon-creek-cottage/014.jpg 768w, /images/1024w/canyon-creek-cottage/014.jpg 1024w, /images/1366w/canyon-creek-cottage/014.jpg 1366w, /images/1600w/canyon-creek-cottage/014.jpg 1600w, /images/canyon-creek-cottage/014.jpg 1800w"
 data-sizes="auto"
 class="lazyload"
@@ -325,7 +318,6 @@ width='1800' height='1200'
 loading="lazy"
 src="/images/foxcroft/002.jpg"
 srcset="/images/640w/foxcroft/002.jpg"
-data-src="/images/foxcroft/002.jpg"
 data-srcset="/images/640w/foxcroft/002.jpg 640w, /images/768w/foxcroft/002.jpg 768w, /images/foxcroft/002.jpg 1000w"
 data-sizes="auto"
 class="lazyload"
@@ -348,7 +340,6 @@ width='1000' height='676'
 loading="lazy"
 src="/images/wedgewood/001.jpg"
 srcset="/images/640w/wedgewood/001.jpg"
-data-src="/images/wedgewood/001.jpg"
 data-srcset="/images/640w/wedgewood/001.jpg 640w, /images/768w/wedgewood/001.jpg 768w, /images/wedgewood/001.jpg 1000w"
 data-sizes="auto"
 class="lazyload"
@@ -371,7 +362,6 @@ width='1000' height='657'
 loading="lazy"
 src="/images/devonshire-lake/003.jpg"
 srcset="/images/640w/devonshire-lake/003.jpg"
-data-src="/images/devonshire-lake/003.jpg"
 data-srcset="/images/640w/devonshire-lake/003.jpg 640w, /images/768w/devonshire-lake/003.jpg 768w, /images/devonshire-lake/003.jpg 1000w"
 data-sizes="auto"
 class="lazyload"
@@ -423,7 +413,7 @@ width='1000' height='665'
                           if ('loading' in HTMLImageElement.prototype) {
                             const images = document.querySelectorAll('img[loading="lazy"]');
                             images.forEach(img => {
-                              img.src = img.dataset.src;
+                              // img.src = img.dataset.src;
                               img.srcset = img.dataset.srcset;
                             });
                           } else {
