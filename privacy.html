@@ -168,21 +168,20 @@
             </p>
             <div class="gallery__item inline_image" style="margin: 0px -10px; padding: 10px">
               <a class="gallery__item__link" href="/images/park-avenue/038w.jpg">
-                <img loading="lazy" src="/images/park-avenue/038w.jpg" srcset="/images/640w/park-avenue/038w.jpg" data-srcset="/images/640w/park-avenue/038w.jpg 640w, /images/768w/park-avenue/038w.jpg 768w, /images/1024w/park-avenue/038w.jpg 1024w, /images/1366w/park-avenue/038w.jpg 1366w, /images/1600w/park-avenue/038w.jpg 1600w, /images/park-avenue/038w.jpg 1800w" data-sizes="auto" class="lazyload" alt="…" width="1800" height="1200" />
+                <img src="/images/park-avenue/038w.jpg" srcset="/images/640w/park-avenue/038w.jpg" data-srcset="/images/640w/park-avenue/038w.jpg 640w, /images/768w/park-avenue/038w.jpg 768w, /images/1024w/park-avenue/038w.jpg 1024w, /images/1366w/park-avenue/038w.jpg 1366w, /images/1600w/park-avenue/038w.jpg 1600w, /images/park-avenue/038w.jpg 1800w" data-sizes="auto" class="lazyload" alt="…" width="1800" height="1200" />
               </a>
             </div>
           </div>
-          <!-- <script type="text/javascript">
-  $(document).ready(function() {
-    $(function () {
-      $('.gallery__item a').fluidbox({
-        immediateOpen: true,
-        loader: false
-      });
-    })
-  });
-</script>
- -->
+          <script type="text/javascript">
+            $(document).ready(function() {
+              $(function () {
+                $('.gallery__item a').fluidbox({
+                  immediateOpen: true,
+                  loader: false
+                });
+              })
+            });
+          </script>
         </section>
       </div>
     </div>
@@ -214,19 +213,19 @@
     <script src="/js/index-min.js"></script>
     <!-- Extra Footer JS Code -->
     <script>
-      if ('loading' in HTMLImageElement.prototype) {
-        const images = document.querySelectorAll('img[loading="lazy"]');
-        images.forEach(img => {
-          // img.src = img.dataset.src;
-          img.srcset = img.dataset.srcset;
-        });
-      } else {
+      // if ('loading' in HTMLImageElement.prototype) {
+      //   const images = document.querySelectorAll('img[loading="lazy"]');
+      //   images.forEach(img => {
+      //     img.src = img.dataset.src;
+      //     img.srcset = img.dataset.srcset;
+      //   });
+      // } else {
         // Dynamically import the LazySizes library
         const script = document.createElement('script');
         script.src =
           'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
         document.body.appendChild(script);
-      }
+      // }
     </script>
   </body>
 </html>

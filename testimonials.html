@@ -168,6 +168,9 @@
             </div>
             <p><br />
             </p>
+            <div class="align-left">
+              <img src="/images/park-avenue/075w.jpg" alt="left" />
+            </div>
             <p>“At the start of our project, Donna listened to us carefully, learned our goals and ideas for the space and then surpassed our expectations by creating an exquisite design for a master bathroom that we could not have imagined. She incorporated our aspirations and offered us a creative, carefully crafted vision of our new bathroom and bedroom, and used computerized graphics to show us what we could have.</p>
             <p>Then, once the work started, the attention and care Donna and her crew took with every detail, from the visibly seamless English wallpaper to the exceptional molding work around our shower, led to beautiful results. She offered little touches to make the master bathroom unique, such as crystal doorknobs.</p>
             <p>Donna and each of her contractors were always courteous, industrious and professional. They demonstrated a consistent conviction to do the job right the first time, and in a timely, efficient manner. We could not have been more thrilled with the results!”</p>
@@ -180,6 +183,9 @@
             </div>
             <p><br />
             </p>
+            <div class="align-right">
+              <img src="/images/canyon-creek-cottage/023.jpg" alt="right" />
+            </div>
             <p>“Donna visualized the perfect master bath for us. She expanded our bathroom to encompass the dressing area, finding gorgeous wallpaper, a double sink vanity, incorporating a small TV in a wall niche, creating a make-up area between the sinks for convenience and also stayed true to our request for polished brass accents throughout.</p>
             <p>Her amazing crew hand-crafted French doors with a transom overhead to allow natural light into the master bath, and she topped it all off with crystal accents in the door knobs, Swarovski crystal drawer pulls, a dramatic crystal and gold lighting fixture, fabrics that updated three of our current pieces through reupholstering for our bedroom and bath, and by adding crown molding throughout.</p>
             <p>Her attention to detail also provided us with strict adherence to code and allowed us to address and upgrade a couple of electrical issues that could have posed a danger to our home in the coming years. Donna was also onsite while the work was being done, providing us confidence that the end product would meet her high standards.</p>
@@ -275,17 +281,16 @@
               </a>
             </div>
           </div>
-          <!-- <script type="text/javascript">
-  $(document).ready(function() {
-    $(function () {
-      $('.gallery__item a').fluidbox({
-        immediateOpen: true,
-        loader: false
-      });
-    })
-  });
-</script>
- -->
+          <script type="text/javascript">
+            $(document).ready(function() {
+              $(function () {
+                $('.gallery__item a').fluidbox({
+                  immediateOpen: true,
+                  loader: false
+                });
+              })
+            });
+          </script>
         </section>
       </div>
     </div>
@@ -317,19 +322,19 @@
     <script src="/js/index-min.js"></script>
     <!-- Extra Footer JS Code -->
     <script>
-      if ('loading' in HTMLImageElement.prototype) {
-        const images = document.querySelectorAll('img[loading="lazy"]');
-        images.forEach(img => {
-          // img.src = img.dataset.src;
-          img.srcset = img.dataset.srcset;
-        });
-      } else {
+      // if ('loading' in HTMLImageElement.prototype) {
+      //   const images = document.querySelectorAll('img[loading="lazy"]');
+      //   images.forEach(img => {
+      //     img.src = img.dataset.src;
+      //     img.srcset = img.dataset.srcset;
+      //   });
+      // } else {
         // Dynamically import the LazySizes library
         const script = document.createElement('script');
         script.src =
           'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
         document.body.appendChild(script);
-      }
+      // }
     </script>
   </body>
 </html>
