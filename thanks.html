@@ -162,9 +162,9 @@
         </section>
         <section class="single">
           <div class="wrap">
-            <div class="gallery__item lightgallery__item" style="width: ">
+            <div class="gallery__item inline-image">
               <a class="gallery__item__link" href="/images/branding_photos/DSC_3420.jpg">
-                <img src="/images/branding_photos/DSC_3420.jpg" alt="…" />
+                <img src="/images/branding_photos/DSC_3420.jpg" srcset="/images/640w/branding_photos/DSC_3420.jpg" data-srcset="/images/640w/branding_photos/DSC_3420.jpg 640w, /images/768w/branding_photos/DSC_3420.jpg 768w, /images/1024w/branding_photos/DSC_3420.jpg 1024w, /images/1366w/branding_photos/DSC_3420.jpg 1366w, /images/1600w/branding_photos/DSC_3420.jpg 1600w, /images/1920w/branding_photos/DSC_3420.jpg 1920w, /images/branding_photos/DSC_3420.jpg 4800w" data-sizes="auto" class="lazyload" alt="…" width="4800" height="3203" />
               </a>
             </div>
           </div>
@@ -206,8 +206,6 @@
       </div>
     </footer>
     <!-- Javascript Assets -->
-    <script src="/js/index-min.js"></script>
-    <!-- Extra Footer JS Code -->
     <script>
       // if ('loading' in HTMLImageElement.prototype) {
       //   const images = document.querySelectorAll('img[loading="lazy"]');
@@ -223,6 +221,8 @@
         document.body.appendChild(script);
       // }
     </script>
+    <script src="/js/index-min.js"></script>
+    <!-- Extra Footer JS Code -->
     <!-- <script src="js/plugins/ResizeSensor.js"></script>
 	<script src="js/plugins/ElementQueries.js"></script> -->
   </body>
