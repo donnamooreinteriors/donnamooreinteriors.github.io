@@ -66,63 +66,30 @@
               <li class="menu__list__item">
                 <a href="/testimonials" class="menu__list__item__link">Testimonials</a>
               </li>
-              <li class="menu__list__item accordion ">
-                <a href="/portfolio" class="menu__list__item__link">Portfolio</a>
-              </li>
-              <div class="panel" style="">
-                <ul class="submenu__list">
-                  <li class="menu__list__item">
-                    <a href="/portfolio/hamilton-terrace" class="menu__list__item__link">Hamilton Terrace</a>
-                  </li>
-                  <li class="menu__list__item">
-                    <a href="/portfolio/park-avenue" class="menu__list__item__link">Park Avenue</a>
-                  </li>
-                  <li class="menu__list__item">
-                    <a href="/portfolio/carrington-pointe" class="menu__list__item__link">Carrington Pointe</a>
-                  </li>
-                  <li class="menu__list__item">
-                    <a href="/portfolio/van-ness-avenue" class="menu__list__item__link">Van Ness Avenue</a>
-                  </li>
-                  <li class="menu__list__item">
-                    <a href="/portfolio/abbeys-way" class="menu__list__item__link">Abbeys Way</a>
-                  </li>
-                  <li class="menu__list__item">
-                    <a href="/portfolio/grant-park" class="menu__list__item__link">Grant Park</a>
-                  </li>
-                  <li class="menu__list__item">
-                    <a href="/portfolio/canyon-creek-cottage" class="menu__list__item__link">Canyon Creek Cottage</a>
-                  </li>
-                  <li class="menu__list__item">
-                    <a href="/portfolio/foxcroft" class="menu__list__item__link">Foxcroft</a>
-                  </li>
-                  <li class="menu__list__item">
-                    <a href="/portfolio/wedgewood" class="menu__list__item__link">Wedgewood</a>
-                  </li>
-                  <li class="menu__list__item">
-                    <a href="/portfolio/devonshire-lake" class="menu__list__item__link">Devonshire Lake</a>
-                  </li>
-                </ul>
-              </div>
-              <script>
-                var acc = document.getElementsByClassName("accordion");
-                var i;
-                for (i = 0; i < acc.length; i++) {
-                  acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active-acc");
-                    var panel = this.nextElementSibling;
-                    // if (panel.style.maxHeight) {
-                    if (panel.style.display === "block") {
-                      // panel.style.maxHeight = null;
-                      panel.style.display = "none";
-                    } else {
-                      // panel.style.maxHeight = panel.scrollHeight + "px";
-                      panel.style.display = "block";
-                    }
-                  });
-                }
-              </script>
             </ul>
           </div>
+        </div>
+        <div class="projects-menu">
+          <ul class="menu__list">
+            <li class="menu__list__item">
+              <a href="/portfolio/hamilton-terrace" class="menu__list__item__link">Hamilton Terrace</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="/portfolio/park-avenue" class="menu__list__item__link">Park Avenue</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="/portfolio/carrington-pointe" class="menu__list__item__link">Carrington Pointe</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="/portfolio/abbeys-way" class="menu__list__item__link">Abbeys Way</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="/portfolio/grant-park" class="menu__list__item__link">Grant Park</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="/portfolio/canyon-creek-cottage" class="menu__list__item__link">The Home Place</a>
+            </li>
+          </ul>
         </div>
         <div class="header__lower">
           <ul class="socials">
@@ -145,7 +112,7 @@
           <div class="footer__copyright">
             <span>© 2020 Donna Moore Interiors</span>
             <br>
-            <a href="/privacy">Privacy Policy</a>
+            <span>Web design by </span><a href="/">...</a>
           </div>
         </div>
       </div>
@@ -161,10 +128,47 @@
         </section>
         <section class="single">
           <div class="wrap">
+            <div class="gallery__item inline-image">
+              <a class="gallery__item__link" href="/images/park-avenue/038w.jpg">
+                <img src="/images/park-avenue/038w.jpg" srcset="/images/640w/park-avenue/038w.jpg" data-srcset="/images/640w/park-avenue/038w.jpg 640w, /images/768w/park-avenue/038w.jpg 768w, /images/1024w/park-avenue/038w.jpg 1024w, /images/1366w/park-avenue/038w.jpg 1366w, /images/1600w/park-avenue/038w.jpg 1600w, /images/park-avenue/038w.jpg 1800w" data-sizes="auto" class="lazyload" alt="…" width="1800" height="1200" />
+              </a>
+            </div>
             <div class="gallery" data-columns="2" style="margin-top: 15px">
               <img src="/images/carrington-pointe/091w.jpg" />
               <img src="/images/carrington-pointe/016w.jpg" />
               <img src="/images/hamilton-terrace/027w.jpg" />
+              <img src="/images/foxcroft/021.jpg" srcset="/images/640w/foxcroft/021.jpg" data-srcset="/images/640w/foxcroft/021.jpg 640w, /images/768w/foxcroft/021.jpg 768w, /images/foxcroft/021.jpg 1000w" data-sizes="auto" class="lazyload" alt="…" width="1000" height="1504" />
+              <img src="/images/foxcroft/005.jpg" srcset="/images/640w/foxcroft/005.jpg" data-srcset="/images/640w/foxcroft/005.jpg 640w, /images/768w/foxcroft/005.jpg 768w, /images/foxcroft/005.jpg 1000w" data-sizes="auto" class="lazyload" alt="…" width="1000" height="1498" />
+            </div>
+            <div class="gallery__item inline-image">
+              <a class="gallery__item__link" href="/images/foxcroft/003.jpg">
+                <img src="/images/foxcroft/003.jpg" srcset="/images/640w/foxcroft/003.jpg" data-srcset="/images/640w/foxcroft/003.jpg 640w, /images/768w/foxcroft/003.jpg 768w, /images/foxcroft/003.jpg 1000w" data-sizes="auto" class="lazyload" alt="…" width="1000" height="667" />
+              </a>
+            </div>
+            <div class="gallery__item inline-image">
+              <a class="gallery__item__link" href="/images/foxcroft/002.jpg">
+                <img src="/images/foxcroft/002.jpg" srcset="/images/640w/foxcroft/002.jpg" data-srcset="/images/640w/foxcroft/002.jpg 640w, /images/768w/foxcroft/002.jpg 768w, /images/foxcroft/002.jpg 1000w" data-sizes="auto" class="lazyload" alt="…" width="1000" height="676" />
+              </a>
+            </div>
+            <div class="gallery__item inline-image">
+              <a class="gallery__item__link" href="/images/wedgewood/001.jpg">
+                <img src="/images/wedgewood/001.jpg" srcset="/images/640w/wedgewood/001.jpg" data-srcset="/images/640w/wedgewood/001.jpg 640w, /images/768w/wedgewood/001.jpg 768w, /images/wedgewood/001.jpg 1000w" data-sizes="auto" class="lazyload" alt="…" width="1000" height="657" />
+              </a>
+            </div>
+            <div class="gallery" data-columns="2">
+              <img src="/images/wedgewood/002.jpg" srcset="/images/640w/wedgewood/002.jpg" data-srcset="/images/640w/wedgewood/002.jpg 640w, /images/768w/wedgewood/002.jpg 768w, /images/wedgewood/002.jpg 1000w" data-sizes="auto" class="lazyload" alt="…" width="1000" height="1498" />
+              <img src="/images/wedgewood/003.jpg" srcset="/images/640w/wedgewood/003.jpg" data-srcset="/images/640w/wedgewood/003.jpg 640w, /images/768w/wedgewood/003.jpg 768w, /images/wedgewood/003.jpg 1000w" data-sizes="auto" class="lazyload" alt="…" width="1000" height="1498" />
+              <img src="/images/devonshire-lake/006.jpg" srcset="/images/640w/devonshire-lake/006.jpg" data-srcset="/images/640w/devonshire-lake/006.jpg 640w, /images/768w/devonshire-lake/006.jpg 768w, /images/devonshire-lake/006.jpg 1000w" data-sizes="auto" class="lazyload" alt="…" width="1000" height="1505" />
+            </div>
+            <div class="gallery__item inline-image">
+              <a class="gallery__item__link" href="/images/devonshire-lake/001.jpg">
+                <img src="/images/devonshire-lake/001.jpg" srcset="/images/640w/devonshire-lake/001.jpg" data-srcset="/images/640w/devonshire-lake/001.jpg 640w, /images/768w/devonshire-lake/001.jpg 768w, /images/devonshire-lake/001.jpg 1000w" data-sizes="auto" class="lazyload" alt="…" width="1000" height="667" />
+              </a>
+            </div>
+            <div class="gallery__item inline-image">
+              <a class="gallery__item__link" href="/images/devonshire-lake/003.jpg">
+                <img src="/images/devonshire-lake/003.jpg" srcset="/images/640w/devonshire-lake/003.jpg" data-srcset="/images/640w/devonshire-lake/003.jpg 640w, /images/768w/devonshire-lake/003.jpg 768w, /images/devonshire-lake/003.jpg 1000w" data-sizes="auto" class="lazyload" alt="…" width="1000" height="665" />
+              </a>
             </div>
             <div class="gallery" data-columns="3" style="margin-top: 15px">
               <img src="/images/park-avenue/075w.jpg" />
@@ -320,7 +324,7 @@
       <div class="footer__copyright">
         <span>© 2020 Donna Moore Interiors</span>
         <br>
-        <a href="/privacy">Privacy Policy</a>
+        <span>Web design by </span><a href="/">...</a>
       </div>
     </footer>
     <!-- Javascript Assets -->
